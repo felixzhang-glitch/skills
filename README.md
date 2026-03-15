@@ -119,6 +119,4 @@ $CODEX_HOME/skills/aliyun-cli
 - 希望让 agent 代为组织 CLI 命令，但仍保留命令可审查性的团队
 - 需要可复用、可扩展、可脱敏的阿里云操作范式仓库
 
-## License
 
-仓库当前未附带单独的 License 文件；如需开源许可，建议补充明确的 License 后再对外长期分发。
