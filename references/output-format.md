@@ -29,13 +29,13 @@
 
 | Profile | Region | Total | Running | Stopped |
 |---|---|---:|---:|---:|
-| `AkProfile` | `cn-hangzhou` | 3 | 2 | 1 |
+| `DemoProfile` | `cn-hangzhou` | 3 | 2 | 1 |
 
 ### ECS 明细表示例
 
 | Region | Zone | InstanceName | InstanceId | Status | InstanceType | Public IP | Private IP | Charge Type |
 |---|---|---|---|---|---|---|---|---|
-| `cn-hangzhou` | `cn-hangzhou-j` | `ops-vm` | `i-bp14nattzmsfndro5mwx` | `Running` | `ecs.e-c1m1.large` | `120.26.100.39` | `172.31.254.34` | `PrePaid` |
+| `cn-hangzhou` | `cn-hangzhou-j` | `demo-vm` | `i-demo123example456` | `Running` | `ecs.e-c1m1.large` | `203.0.113.10` | `10.0.0.10` | `PrePaid` |
 
 ### 适合默认保留的 ECS 字段
 
@@ -67,15 +67,15 @@
 
 | Field | Value |
 |---|---|
-| Profile | `AkProfile` |
+| Profile | `DemoProfile` |
 | Region | `cn-hangzhou` |
 | Zone | `cn-hangzhou-j` |
-| InstanceName | `ops-vm` |
-| InstanceId | `i-bp14nattzmsfndro5mwx` |
+| InstanceName | `demo-vm` |
+| InstanceId | `i-demo123example456` |
 | Status | `Running` |
 | InstanceType | `ecs.e-c1m1.large` |
-| Public IP | `120.26.100.39` |
-| Private IP | `172.31.254.34` |
+| Public IP | `203.0.113.10` |
+| Private IP | `10.0.0.10` |
 | Charge Type | `PrePaid` |
 
 如果同一资源还有 2 到 4 个很重要的补充字段，可以放在表格后用简短 bullets 补充，不要再起第二张大表。
@@ -96,7 +96,7 @@
 
 | SecurityGroupId | Direction | Protocol | PortRange | SourceCidrIp | Policy | RuleId |
 |---|---|---|---|---|---|---|
-| `sg-bp1h18esyi7ngd5wtlbg` | `ingress` | `TCP` | `22/22` | `112.193.33.137/32` | `Accept` | `sgr-bp18oymb0zevo819pqmz` |
+| `sg-demo123example456` | `ingress` | `TCP` | `22/22` | `198.51.100.25/32` | `Accept` | `sgr-demo123example456` |
 
 ### 变更操作补充字段
 
@@ -121,7 +121,7 @@
 
 | Profile | Region | Filters | Result |
 |---|---|---|---|
-| `AkProfile` | `cn-hangzhou` | `InstanceName=web-prod` | `0 records` |
+| `DemoProfile` | `cn-hangzhou` | `InstanceName=demo-web` | `0 records` |
 
 ## 失败结果
 
